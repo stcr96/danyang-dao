@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
+import './assets/css/index.css';
 
 import { HashRouter } from 'react-router-dom';
 import { MetaMaskProvider } from "@metamask/sdk-react";
@@ -14,7 +15,7 @@ root.render(
         debug={false}
         sdkOptions={{
           dappMetadata: {
-            name: "Example React Dapp",
+            name: "Danyang DAO",
             url: window.location.href,
           },
         }}
