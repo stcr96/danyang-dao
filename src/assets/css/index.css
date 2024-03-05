@@ -6,6 +6,10 @@ div {
   display: block;
 }
 
+.container {
+  padding-top: 150px;
+}
+
 .navbar {
   z-index: 9999;
   font-size: 1rem;
