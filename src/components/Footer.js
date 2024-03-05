@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <>
+    <footer className='mt-5'>
       <Container fluid='lg'>
         <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <Nav.Item className="col-md-4 d-flex align-items-center">
@@ -42,7 +42,7 @@ function Footer() {
           </Nav>
         </footer>
       </Container>
-    </>
+    </footer>
   )
 }
 

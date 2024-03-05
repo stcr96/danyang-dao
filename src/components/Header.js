@@ -1,21 +1,11 @@
-import React, { useState } from 'react';
-import { useSDK } from "@metamask/sdk-react";
+import React from 'react';
+// import { ethers } from 'ethers'; 
 
 import { Button, Container, Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function Header() {
-  const [account, setAccount] = useState('');
-  const { sdk, connected } = useSDK();
-
-  const connect = async () => {
-    try {
-      const accounts = await sdk?.connect();
-      setAccount(accounts?.[0]);
-    } catch (err) {
-      console.warn("failed to connect..", err);
-    }
-  };
+  
 
   return (
     <>
@@ -29,23 +19,12 @@ function Header() {
             Danyang
           </Navbar.Brand>
           <Nav className="ms-auto pe-4">
-            <Nav.Link as={Link} to="/about">알아보기</Nav.Link>
-            <Nav.Link as={Link} to="/nft">주민되기</Nav.Link>
+            <Nav.Link as={Link} to="/danyang-dao">알아보기</Nav.Link>
+            <Nav.Link as={Link} to="/nfts">주민되기</Nav.Link>
           </Nav>
-          {connected ? (
-            <>
-              <Button as={Link} to='/profile' variant="outline-primary">
-                My Profile
-              </Button>
-              <div>
-                {account && `Connected account: ${account}`}
-              </div>
-            </>
-          ) : (
-            <Button variant="outline-primary" onClick={connect}>
-            로그인
-            </Button>
-          )}
+          <Button variant="outline-primary">
+          로그인
+          </Button> 
         </Container>
       </Navbar>
     </>

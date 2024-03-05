@@ -1,17 +1,21 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Profile from "./pages/Profile";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import SalePage from './pages/SalePage';
+import ProfilePage from "./pages/ProfilePage";
 
 function App() {
+  
+
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route exact path="/" element={<HomePage />} />
+        <Route path="/danyang-dao" element={<AboutPage />} />
+        <Route path='/nfts' element={<SalePage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </>
   );

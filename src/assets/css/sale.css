@@ -1,0 +1,39 @@
+.nft_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nft_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  max-width: 40%;
+}
+
+.nft_content {
+  font-size: 14px;
+  line-height: 2em;
+  margin-bottom: 2em;
+}
+
+.sale_wrapper {
+  margin-top: auto;
+}
+
+.nft_img {
+  max-width: 50%;
+}
+
+.data {
+  font-weight: bold;
+}
+
+.unit {
+  font-weight: bold;
+  font-size: small;
+}
+
+.sale_price {
+  font-weight: bold;
+  font-size: x-large;
+}
