@@ -21,6 +21,7 @@ function Header() {
           <Nav className="ms-auto pe-4">
             <Nav.Link as={Link} to="/danyang-dao">알아보기</Nav.Link>
             <Nav.Link as={Link} to="/nfts">주민되기</Nav.Link>
+            <Nav.Link as={Link} to="https://open.kakao.com/o/gSjl1meg">참여하기</Nav.Link>
           </Nav>
           <Button variant="outline-primary">
           로그인
