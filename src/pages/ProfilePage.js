@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button, Container, Image } from 'react-bootstrap';
 import NFTInfo from '../components/NFTInfo';
-import '../assets/css/profile.css';
+import '../assets/css/profilepage.css';
 
 function ProfilePage() {
   const [profileBackground, setProfileBackground] = useState(null);
@@ -30,6 +30,7 @@ function ProfilePage() {
   return (
     <>
       <Header />
+      <div className="profile-main">
         {/* 프로필 배경사진 */}
         <div className="profile-container">
           <label htmlFor="backgroundUpload" className="profile-background-container">
@@ -60,6 +61,7 @@ function ProfilePage() {
           </div>
         <NFTInfo />
         </Container>
+      </div>
       <Footer />
     </>
   )

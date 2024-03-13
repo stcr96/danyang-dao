@@ -7,17 +7,16 @@ import SalePage from './pages/SalePage';
 import ProfilePage from "./pages/ProfilePage";
 
 function App() {
-  
 
   return (
-    <>
+    <div id='App'>
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route path="/danyang-dao" element={<AboutPage />} />
         <Route path='/nfts' element={<SalePage />} />
         <Route path="/profile" element={<ProfilePage />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

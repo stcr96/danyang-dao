@@ -11,6 +11,14 @@ img {
   vertical-align: middle;
 }
 
+.a {
+  margin-bottom: 5em;
+}
+
+.b {
+  background-color: antiquewhite;
+}
+
 .timeline {
   display: flex;
   flex-direction: column;
