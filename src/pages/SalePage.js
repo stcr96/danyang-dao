@@ -3,15 +3,14 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Button, Container } from 'react-bootstrap';
-
-import '../assets/css/sale.css';
+import '../assets/css/salepage.css';
 
 function SalePage() {
 
   return (
     <>
       <Header />
-      <div className='container'>
+      <div className='main'>
         <Container fluid='lg' id="sale">
           <h2 className='text-center'>단양팔경 NFT</h2>
           <hr className='my-5' />

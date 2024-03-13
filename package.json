@@ -4,12 +4,11 @@
   "private": true,
   "dependencies": {
     "@metamask/sdk-react": "^0.15.0",
-    "@openzeppelin/contracts": "^5.0.1",
+    "@metamask/sdk-react-ui": "^0.17.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
-    "ethers": "^6.11.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
     "react-bootstrap-icons": "^1.11.3",
@@ -45,9 +44,12 @@
     ]
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^4.7.3",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.33.2",
+    "ethers": "^6.11.1",
     "hardhat": "^2.20.1"
   }
 }
